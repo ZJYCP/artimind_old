@@ -126,7 +126,7 @@ export default {
         let socket = ref(null)
         let model = ref("GPT3_5")
         let modelVisible = ref(false)
-        let url = ref("ws://api.artimind.top/chat/api/")
+        let url = ref("wss://api.artimind.top/chat/api/")
         let aiLoading = ref(false)
         let aiPrompt = ref('有问题尽管问我....')
         onMounted(() => {
