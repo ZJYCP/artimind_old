@@ -1,20 +1,20 @@
 <template>
     <nav class="header">
         <div class="header-side">
-            <router-link class="logo hidden-xs-only" to="/">GPT</router-link>
-            <div @click="appletDialogVisible = true" class="rechargeButton hidden-xs-only applet">
+            <router-link class="logo hidden-xs-only" to="/">Artimind</router-link>
+            <!-- <div @click="appletDialogVisible = true" class="rechargeButton hidden-xs-only applet">
                 <img class="appletIcon" :src="require('../assets/applet.svg')">
                 <div class="rechargeButtonText">微信小程序</div>
-            </div>
-        </div>
-        <div v-if="isHeadNavigation" class="header-center">
+            </div> -->
+        </div>  
+        <!-- <div v-if="isHeadNavigation" class="header-center">
             <div class="switch-button">
                 <block v-for="(item,index) in navigationList" :key="index">
                     <router-link active-class="switch-active" class="switch-item" :to="item.to">{{ item.title }}
                     </router-link>
                 </block>
             </div>
-        </div>
+        </div> -->
 
         <div v-if="store.getters.userinfo" class="header-side header-right">
             <div @click="router().push({
@@ -165,7 +165,7 @@ export default defineComponent({
     height: 60px;
     box-sizing: border-box;
     width: 100%;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid rgb(40, 40, 40);
     flex-shrink: 0;
     justify-content: space-between;
     align-items: center;
@@ -227,7 +227,7 @@ export default defineComponent({
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
-    color: var(--el-text-color-primary);
+    color: var(--el-text-color-light);
     text-decoration: none;
     animation: logoAnimation 0.3s;
 }

@@ -3,8 +3,9 @@
         <div class="leftNavigation">
 <!--            :src="store.getters.userinfo.avatar ? store.getters.userinfo.avatar : require('../assets/logoHead.svg')"-->
             <el-avatar class="headPortrait" :size="70" :icon="UserFilled"
-                       :src="require('../assets/logoHead.svg')"
-                       style="background-color: #b6ccee"/>
+                       :src="require('../assets/logo1.png')"
+                       style="background-color: #5c5c5c"/>
+
             <div v-if="store.getters.userinfo" class="surplus">Ai币：{{ store.getters.userinfo.frequency }}</div>
             <div v-else @click="loginVisible = true" class="loginBut">登录</div>
             <div class="header">
@@ -21,8 +22,8 @@
             </div>
 
             <div class="bottom">
-                <el-avatar :size="40" :icon="UserFilled" :src="require('../assets/logoHead.svg')"
-                           style="background-color: #b6ccee"/>
+                <el-avatar :size="40" :icon="UserFilled" :src="require('../assets/logo2.png')"
+                           style="background-color: #5c5c5c"/>
                 <div class="bottomRight">
                     <div class="bottomRightName">Ai</div>
                     <div class="bottomRightEdition">v1.0.0</div>
@@ -84,11 +85,13 @@ export default defineComponent({
             title: '智能对话',
             icon: ChatDotSquare,
             to: '/'
-        }, {
-            title: '新必应',
-            icon: ChatLineRound,
-            to: '/bing'
-        }, {
+        },
+        //  {
+        //     title: '新必应',
+        //     icon: ChatLineRound,
+        //     to: '/bing'
+        // }, 
+        {
             title: '智能绘图',
             icon: HelpFilled,
             to: '/painting'
@@ -136,7 +139,7 @@ export default defineComponent({
     width: 100%;
     height: 100%;
     display: flex;
-    border: 1px solid #e8e8e8;
+    border: 1px solid rgb(40, 40, 40);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -144,8 +147,8 @@ export default defineComponent({
 .leftNavigation {
     width: 260px;
     height: 100%;
-    background-color: white;
-    border-right: 1px solid #e8e8e8;
+    background-color: rgb(38, 38, 38);
+    border-right: 1px solid rgb(40, 40, 40);
     position: relative;
 }
 
@@ -155,7 +158,7 @@ export default defineComponent({
     bottom: 0;
     width: 100%;
     height: 70px;
-    border-top: 1px solid #e8e8e8;
+    border-top: 1px solid rgb(40, 40, 40);
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -199,7 +202,7 @@ export default defineComponent({
 .rightContent {
     position: relative;
     flex: 1;
-    background: #f6f6f6;
+    background: #464646;
 }
 
 .loginBut {
@@ -232,7 +235,7 @@ export default defineComponent({
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #303030;
+    color: white;
     font-size: 15px;
 }
 
@@ -241,7 +244,7 @@ export default defineComponent({
 }
 
 .switch-active {
-    background-color: #f6f6f6;
+    background-color: #87aaf0;
     border-radius: 8px
 }
 

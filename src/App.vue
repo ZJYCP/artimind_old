@@ -39,8 +39,8 @@ html, body {
     margin: 0;
     padding: 0;
     /*background: #f6f6f6;*/
-    background: white;
-    color: #303030;
+    background: rgb(40, 40, 40);
+    color: #dadada;
     width: 100%;
     height: 100%;
 }

@@ -373,7 +373,7 @@ export default {
     box-sizing: border-box;
     z-index: 1;
     pointer-events: none;
-    background: linear-gradient(rgba(246, 246, 246, 0), #f6f6f6 25%);
+    /* background: linear-gradient(rgba(246, 246, 246, 0), #f6f6f6 25%); */
     flex-shrink: 0;
     padding: 30px 20px;
     display: flex;
